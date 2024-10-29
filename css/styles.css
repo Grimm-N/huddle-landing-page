@@ -1,0 +1,132 @@
+/* variables */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --violet-shadow: hsla(257, 42%, 35%, 0.75);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-VariableFont_wght.ttf') format('truetype'),
+        url('../fonts//Poppins-VariableFont_wght.woff') format('woff'),
+        url('../fonts/Poppins-VariableFont_wght.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype'),
+        url('../fonts/OpenSans-VariableFont_wdth\,wght.woff') format('woff'),
+        url('../fonts/OpenSans-VariableFont_wdth\,wght.woff2') format('woff2');
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: white;
+    background-image: url('../images/bg-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: var(--violet);
+    height: 100%;
+}
+
+.intro {
+    flex: 0 1 46.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 82%;
+    margin: 4rem auto;
+}
+
+.intro__logo {
+    align-self: flex-start;
+    cursor: pointer;
+    margin-bottom: 14vw;
+}
+
+.intro__logo svg {
+    width: 95%;
+}
+
+.intro__logo svg path {
+    transition: fill 0.3s ease;
+}
+
+.intro__logo:hover svg path {
+    fill: var(--magenta);
+}
+
+.intro__image {
+    width: 100%;
+    margin-bottom: 14vw;
+}
+
+.intro__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+    margin-bottom: 14vw;
+}
+
+.intro__title {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+}
+
+.intro__text {
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+    font-family: 'OpenSans';
+    line-height: 1.5;
+}
+
+.intro__button {
+    font-size: 1.5rem;
+    color: var(--violet);
+    background-color: white;
+    padding: 1.68rem;
+    width: 65%;
+    margin: 1.4rem auto 1rem;
+    border: none;
+    border-radius: 4rem;
+    box-shadow: 0.25rem 0.5rem 0.5rem var(--violet-shadow),
+                -0.25rem -0.1rem 0.5rem var(--violet-shadow);
+    transition: all 0.3s ease;
+}
+
+.intro__button:hover {
+    color: white;
+    background-color: var(--magenta);
+}
+
+.intro__social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social__icon svg {
+    width: 3.5rem;
+    height: auto;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.social__icon svg:hover {
+    fill: var(--magenta);
+}
+
+footer {
+    display: none;
+}

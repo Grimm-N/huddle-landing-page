@@ -1,0 +1,114 @@
+@media (min-width: 68rem) {
+    body {
+        background-image: url('../images/bg-desktop.svg');
+        background-position: left;
+        background-size: contain;
+    }
+
+    .intro {
+        flex: 1 1 50%;
+        display: grid;
+        grid-template-columns: 55% 40%;
+        max-width: 90%;
+        justify-items: left;
+        column-gap: 4.5rem;
+        margin: 3.25rem 0 2rem;
+    }
+
+    .intro__image,
+    .intro__content {
+        margin-bottom: 0;
+    }
+
+    .intro__logo {
+        grid-column: 1;
+        align-self: flex-start;
+        margin-bottom: 5vw;
+    }
+
+    .intro__logo svg {
+        width: 75%;
+    }
+
+    .intro__image {
+        grid-column: 1;
+    }
+
+    .intro__content {
+        grid-column: 2;
+        align-self: flex-start;
+        text-align: left;
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+
+    .intro__title {
+        font-size: 2.4rem;
+        padding-top: 0;
+    }
+
+    .intro__text {
+        font-size: 1.12rem;
+    }
+
+    .intro__button {
+        font-size: 1rem;
+        padding: 1rem;
+        width: 38%;
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    .intro__social {
+        grid-column: 2;
+        gap: 1rem;
+        justify-self: end;
+        margin-top: 1.5rem;
+    }
+
+    .social__icon svg {
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 31rem) {
+    .intro {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+
+    .intro__logo, .intro__image, .intro__content {
+        margin-bottom: 7vw;
+    }
+
+    .intro__logo svg {
+        width: 50%;
+    }
+
+    .intro__content {
+        gap: 1rem;
+    }
+
+    .intro__title {
+        font-size: 2rem;
+    }
+
+    .intro__text {
+        font-size: 1rem;
+    }
+
+    .intro__button {
+        font-size: 1rem;
+        padding: 1rem;
+        width: 45%;
+    }
+
+    .intro__social {
+        gap: 1rem;
+    }
+
+    .social__icon svg {
+        width: 2.5rem;
+    }
+
+}
